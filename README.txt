@@ -14,7 +14,6 @@ Using SpringDoc as Swagger can still be rather difficult to get working with Spr
     - http://localhost:8080/swagger-ui/index.html
     - http://localhost:8080/v3/api-docs
 
-The MediaType of the response can be controlled via the Accept header, sadly this seems to default to XML in a browser,
- so I recommend testing this in swagger ui or via curl
+The MediaType of the response can be controlled via the Accept header, sadly this seems to default to XML in a browser, so I recommend testing this in swagger ui or via curl
     - curl -H "Accept: application/json" http://localhost:8080/primes/10
 
