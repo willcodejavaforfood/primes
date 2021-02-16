@@ -3,11 +3,16 @@ package com.echolima.primes.web;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
+@XmlRootElement
 public class PrimesResponse {
     private Integer initial;
     private List<Integer> primes;
+
+    public PrimesResponse() {
+    }
 
     @JsonCreator
     public PrimesResponse(
