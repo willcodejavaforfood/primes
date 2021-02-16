@@ -1,4 +1,6 @@
-package com.echolima.primes;
+package com.echolima.primes.algo;
+
+import com.echolima.primes.PrimesCalculator;
 
 import java.util.List;
 import java.util.stream.Collectors;

@@ -1,4 +1,4 @@
-package com.echolima.primes;
+package com.echolima.primes.web;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

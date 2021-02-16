@@ -1,8 +1,11 @@
-package com.echolima.primes;
+package com.echolima.primes.web;
 
+import com.echolima.primes.PrimesCalculator;
 import com.google.common.collect.ImmutableMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,7 +19,8 @@ public class PrimesController {
 
     private final ImmutableMap<String, PrimesCalculator> primeCalculators;
 
-    public PrimesController(ImmutableMap<String, PrimesCalculator> primeCalculators) {
+    @Autowired
+    public PrimesController(@Qualifier("algos") ImmutableMap<String, PrimesCalculator> primeCalculators) {
         this.primeCalculators = primeCalculators;
     }
 

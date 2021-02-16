@@ -1,5 +1,7 @@
 package com.echolima.primes;
 
+import com.echolima.primes.web.PrimesResponse;
+import com.echolima.primes.web.PrimesController;
 import com.google.common.collect.Lists;
 import org.junit.Test;
 import org.junit.runner.RunWith;

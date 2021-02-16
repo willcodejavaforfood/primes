@@ -1,5 +1,6 @@
-package com.echolima.primes;
+package com.echolima.primes.web;
 
+import com.echolima.primes.PrimesCalculator;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Lists;
 import org.junit.Before;
